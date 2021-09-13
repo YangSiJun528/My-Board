@@ -14,3 +14,39 @@ thead tr {
 thead td {
   line-height: initial;
 }
+.truncate {
+  width: 600px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media ( max-width: 1200px ) {
+  .truncate {
+    width: 480px;
+  }
+}
+@media ( max-width: 991px ) {
+  .truncate {
+    width: 360px;
+  }
+}
+@media ( max-width: 768px ) {
+  .truncate {
+    width: 240px;
+  }
+}
+@media ( max-width: 520px ) {
+  .truncate {
+    width: 180px;
+  }
+}
+@media ( max-width: 425px ) {
+  .truncate {
+    width: 140px;
+  }
+}
+@media ( max-width: 360px ) {
+  .truncate {
+    width: 100px;
+  }
+}

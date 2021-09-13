@@ -9,7 +9,7 @@ function Posts(props) {
       <Table hover>
         <thead>
           <tr>
-            <td Style="width: 70%">Title</td>
+            <td Style="width: 50%">Title</td>
             <td Style="width: 10%">User</td>
             <td Style="width: 10%">Date</td>
             <td Style="width: 10%">Likes</td>
@@ -20,7 +20,7 @@ function Posts(props) {
             props.posts.map((post) =>
             {return (
               <tr>
-                <td>{post.title}</td>
+                <td><p className="truncate">{post.title}</p></td>
                 <td>{post.user}</td>
                 <td>{post.date}</td>
                 <td>{post.likes}</td>

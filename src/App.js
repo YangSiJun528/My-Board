@@ -7,21 +7,25 @@ import { First } from 'react-bootstrap/esm/PageItem';
 function App() {
   let [ login, setLogin] = useState(true);
   let [ posts, setPosts] = useState([{
+    number: 1,
     title: 'First',
     user: 'user',
     date: '21/09/13',
     likes: 15
   },{
+    number: 1,
     title: 'First',
     user: 'user',
     date: '21/09/13',
     likes: 15
   },{
+    number: 1,
     title: 'First',
     user: 'user',
     date: '21/09/13',
     likes: 15
   },{
+    number: 1,
     title: 'First',
     user: 'user',
     date: '21/09/13',
