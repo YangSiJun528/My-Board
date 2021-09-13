@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { Header } from './components/Header.js';
 import './App.css';
 
 function App() {
+  let [ login, setLogin] = useState(true);
+  let [ user, setUser] = useState({
+    name: 'user',
+    password: 'password',
+    logon_date: new Date(),
+    likes: [1232131,123123123,213213,2]
+  });
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header login={ login } user={ user }/>
     </div>
   );
 }
