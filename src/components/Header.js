@@ -5,13 +5,13 @@ import '../css/header.css';
 function Header(props) {
   let history = useHistory();
   return (
-    <Navbar expand="lg" variant="light" bg="light">
+    <Navbar fixed="top" expand="sm" variant="light" bg="light">
       <Container>
-        <Navbar.Brand onClick={ () => {history.push(`/`)}}>MyBoard</Navbar.Brand>
+        <Navbar.Brand className="pointer" onClick={ () => {history.push(`/`)}}>MyBoard</Navbar.Brand>
         {
         props.login === true
         ?        
-          <Navbar.Text className="justify-content-end">
+          <Navbar.Text className="justify-content-end pointer">
             <a onClick={ () => {history.push(`/user/${props.user.name}/info`)}}>{props.user.name}</a>
           </Navbar.Text>
         :           

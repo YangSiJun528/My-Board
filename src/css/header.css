@@ -2,4 +2,9 @@
 
 .navbar {
   padding:16px;
+  font-weight: bold;
+}
+
+.pointer:hover {
+  cursor: pointer;
 }

@@ -1,0 +1,16 @@
+tr {
+  border: solid #444444;
+  height: 48px;
+}
+tr:hover {
+  cursor: pointer;
+}
+td {
+  line-height: 48px;
+}
+thead tr {
+  background-color: rgb(200, 200, 200);
+}
+thead td {
+  line-height: initial;
+}
