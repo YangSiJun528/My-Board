@@ -13,19 +13,19 @@ function App() {
     date: '21/09/13',
     likes: 15
   },{
-    number: 1,
+    number: 2,
     title: 'First',
     user: 'user',
     date: '21/09/13',
     likes: 15
   },{
-    number: 1,
+    number: 41,
     title: 'First',
     user: 'user',
     date: '21/09/13',
     likes: 15
   },{
-    number: 1,
+    number: 53,
     title: 'First',
     user: 'user',
     date: '21/09/13',
