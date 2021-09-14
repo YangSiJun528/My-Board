@@ -5,7 +5,7 @@ import '../css/search.css';
 function Search(props) {
   let history = useHistory();
   return (
-    <Container className="search">
+    <Container className="search mb-4">
       <Col><Form.Control type="text" placeholder="Normal text" /></Col>
       <Button variant="dark">Search</Button>
     </Container>      
