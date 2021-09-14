@@ -2,3 +2,19 @@
   display: flex;
   justify-content: space-around;
 }
+.search-bar {
+  border-color: #212529;
+}
+.search-bar:focus{
+  border-color: #212529;
+  box-shadow: 0 0 0 0.01rem #212529;
+}
+.search Button:focus{
+  border-color: #212529;
+  box-shadow: 0 0 0 0rem #212529;
+}
+
+.search .option:focus{
+  border-color: #6c757d;
+  box-shadow: 0 0 0 0rem #6c757d;
+}

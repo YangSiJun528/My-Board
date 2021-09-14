@@ -5,10 +5,17 @@ import '../css/search.css';
 function Search(props) {
   let history = useHistory();
   return (
-    <Container className="search mb-4">
-      <Col><Form.Control type="text" placeholder="Normal text" /></Col>
-      <Button variant="dark">Search</Button>
-    </Container>      
+    <Form>
+      <Container className="search mb-4">
+        <Col sm={.1}><Form.Control className="option" as="select">
+          <option value="1">전체</option>
+          <option value="2">제목</option>
+          <option value="3">유저</option>
+        </Form.Control></Col>
+        <Col><Form.Control className="mx-1 search-bar" type="text" placeholder=""/></Col>
+        <Button variant="dark">Search</Button>
+      </Container>      
+    </Form>
   );
 }
 
