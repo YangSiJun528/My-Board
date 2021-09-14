@@ -19,7 +19,7 @@ function Posts(props) {
           {
             props.posts.map((post) =>
             {return (
-              <tr className="post" onClick={ () => {history.push(`/boards/${post.number}`)}}>
+              <tr className="post" onClick={ () => {history.push(`/posts/${post.number}`)}}>
                 <td><p className="truncate">{post.title}</p></td>
                 <td>{post.user}</td>
                 <td>{post.date}</td>

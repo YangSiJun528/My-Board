@@ -7,6 +7,7 @@ import { First } from 'react-bootstrap/esm/PageItem';
 
 function App() {
   let [ login, setLogin] = useState(true);
+  let [ page, setPage] = useState(1);
   let [ posts, setPosts] = useState([{
     number: 1,
     title: 'Firstaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
@@ -42,7 +43,7 @@ function App() {
     <div className="App">
       <Header login={ login } user={ user }/>
       <Search/>
-      <Posts posts={ posts }></Posts>
+      <Posts posts={ posts } page={ page }></Posts>
     </div>
   );
 }
