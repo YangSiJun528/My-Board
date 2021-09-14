@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Header } from './components/Header.js';
+import { Search } from './components/Search.js';
 import { Posts } from './components/Posts.js';
 import './App.css';
 import { First } from 'react-bootstrap/esm/PageItem';
@@ -40,6 +41,7 @@ function App() {
   return (
     <div className="App">
       <Header login={ login } user={ user }/>
+      <Search/>
       <Posts posts={ posts }></Posts>
     </div>
   );

@@ -47,6 +47,6 @@ thead td {
 }
 @media ( max-width: 360px ) {
   .truncate {
-    width: 100px;
+    width: 80px;
   }
 }
