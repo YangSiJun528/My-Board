@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Header } from './components/Header.js';
 import { Search } from './components/Search.js';
 import { Posts } from './components/Posts.js';
+import { WriteBtn } from './components/WriteBtn.js';
 import './App.css';
 import { First } from 'react-bootstrap/esm/PageItem';
 
@@ -44,6 +45,7 @@ function App() {
       <Header login={ login } user={ user }/>
       <Search/>
       <Posts posts={ posts } page={ page }></Posts>
+      <WriteBtn/>
     </div>
   );
 }

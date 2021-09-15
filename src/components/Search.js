@@ -13,8 +13,13 @@ function Search(props) {
           <option value="3">유저</option>
         </Form.Control></Col>
         <Col><Form.Control className="mx-1 search-bar" type="text" placeholder=""/></Col>
-        <Button variant="dark">Search</Button>
-      </Container>      
+        <Button onClick={()=>{
+          history.push(`/write`)
+          axios.get('')
+          .then((result)=>{})
+          .catch(()=>{ })
+        }} variant="dark">Search</Button>
+      </Container>
     </Form>
   );
 }
