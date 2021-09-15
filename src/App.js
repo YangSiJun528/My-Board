@@ -5,6 +5,7 @@ import { Posts } from './components/Posts.js';
 import { WriteBtn } from './components/WriteBtn.js';
 import './App.css';
 import { First } from 'react-bootstrap/esm/PageItem';
+import axios from 'axios';
 
 function App() {
   let [ login, setLogin] = useState(true);
